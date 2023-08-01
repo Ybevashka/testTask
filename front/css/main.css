@@ -1,0 +1,114 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    border:1px solid red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    border-radius: 12px;
+    background: #E7832B;
+    padding: 0 26px 0 26px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    column-gap: 44px;
+}
+h2{
+    width: 100%;
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+}
+.info span{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Open Sans, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    align-items: flex-start;
+    row-gap: 7px;
+}
+.man{
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+}
+button{
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 0;
+    height: 52px;
+    width: 100%;
+    background: #FAB42A;
+    color: #000;
+    text-align: center;
+    font-family: Open Sans, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        position: relative;
+        width: 620px;
+        height: 290px;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container{
+        position: relative;
+        width: 348px;
+        height: 505px;
+        flex-direction: column;
+        padding: 34px 23px 0 23px;
+        justify-content: flex-start;
+
+    }
+    .info{
+        text-align: center;
+    }
+    .man{
+        justify-content: center;
+        align-self: center;
+        width: 195px;
+        position: absolute;
+        bottom: -50px;
+       /* width: 100%;
+        border:1px solid red;
+        object-fit: cover;
+        object-position: top;
+        height: 209px;*/
+    }
+    img{
+        width: 100%;
+    }
+
+}
